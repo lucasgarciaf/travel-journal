@@ -20,16 +20,16 @@ nav {
   background-color: #f55a5a;
   height: 70px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   color: #ffffff;
-  padding: 20px 36px;
-  text-align: center;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .title--navbar {
+  padding: 20px;
   color: #ffffff;
-  position: absolute;
-  left: 100px;
 }
 
 .cards--list {
@@ -45,4 +45,15 @@ nav {
 .card--line {
   display: flex;
   flex-direction: row;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55a5a;
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  color: whitesmoke;
 }

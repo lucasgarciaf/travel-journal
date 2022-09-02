@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocation } from "@fortawesome/free-solid-svg-icons";
+
 export default function Cards(props) {
   return (
     <div className="card--line">
@@ -9,8 +12,11 @@ export default function Cards(props) {
         />
       </div>
       <div>
-        <span className="fa-solid fa-user"></span>
         <p>
+          {" "}
+          <span className="fa-solid fa-user">
+            <FontAwesomeIcon icon={faLocation} size="xl"></FontAwesomeIcon>
+          </span>
           {props.country}{" "}
           <a href={props.gmapslink} className="gmaps--link">
             View on Google Maps
